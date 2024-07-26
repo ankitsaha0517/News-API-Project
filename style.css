@@ -1,0 +1,10 @@
+/* .Acart{
+    height: 20vw;
+    width: 20vw;
+    z-index: 99;
+} */
+ 
+.active{
+    color: #1A4BFF !important;
+    font-weight: 600 !important;
+}

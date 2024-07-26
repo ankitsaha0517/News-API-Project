@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS WEBSIDE</title>
+    <link rel="shortcut icon" href="./assec/newspaper.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          backdropBlur: {
+              '3xl': '30px',
+          },
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+  
+    <div class="bg-white">
+        <header class="absolute inset-x-0 top-0 z-50">
+              <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1 h-12 overflow-hidden">
+                    <img class="h-full w-auto object-cover"  src="./assec/breaking-news.png" alt="">
+
+                </div>
+                <div class="flex lg:hidden">
+                  <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                  </button>
+                </div>
+                <div id="nav-links" class="hidden lg:flex lg:gap-x-12">
+                  <a href="#" class=" text-sm font-semibold leading-6 text-gray-900 active">Home</a>
+                  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Eduction</a>
+                  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Job</a>
+                  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Cricket</a>
+                  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Trending</a>
+
+                </div>
+                <div id="search-box" class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <div class='max-w-md mx-auto'>
+                        <div class="relative flex items-center w-full h-10 rounded-lg focus-within:border-2 border-slate-300 bg-white overflow-hidden">
+                            <div class="grid place-items-center h-full w-12 text-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                    
+                            <input
+                            class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
+                            type="text"
+                            id="search"
+                            placeholder="Search something.." /> 
+                        </div>
+                    </div>
+                </div>
+              </nav>
+        </header>
+          
+        <div id="loader" class="mt-[15vh] w-[100%] h-[85vh] bg-[#1A4BFF]">
+          <video autoplay muted loop class="w-full h-full object-contain" src="./assec/loder.mp4"></video>
+        </div>
+        <div id="news-lodar">
+        <div id="news-container" class="bg-white py-24 px-10 flex flex-wrap	justify-center shrink-0 gap-x-12 items-center sm:py-32 sm:px-[8vh]">
+              
+                
+          
+          
+        </div>
+      </div>
+
+    </div>
+      
+    <script src="./app.js" ></script>
+</body>
+</html>
